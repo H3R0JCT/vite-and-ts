@@ -1,0 +1,130 @@
+{
+  "movies": [
+    {
+      "id": "3",
+      "title": "The Hunger Games",
+      "genreId": "7",
+      "ratingID": "4"
+    },
+    {
+      "id": "4",
+      "title": "The Shawshank Redemption",
+      "genreId": "3",
+      "ratingID": "4"
+    },
+    {
+      "id": "b40d",
+      "title": "The Dark Knight",
+      "genreId": "2",
+      "ratingID": "4"
+    },
+    {
+      "id": "1dc9",
+      "title": "Inception",
+      "genreId": "8",
+      "ratingID": "5"
+    },
+    {
+      "id": "7ee8",
+      "title": "Robin Hood Men in Tights",
+      "genreId": 4,
+      "ratingID": 5
+    }
+  ],
+  "genre": [
+    {
+      "id": "1",
+      "text": "Horror"
+    },
+    {
+      "id": "2",
+      "text": "Action"
+    },
+    {
+      "id": "3",
+      "text": "Drama"
+    },
+    {
+      "id": "4",
+      "text": "Comedy"
+    },
+    {
+      "id": "5",
+      "text": "Romance"
+    },
+    {
+      "id": "6",
+      "text": "Sci-Fi"
+    },
+    {
+      "id": "7",
+      "text": "Fantasy"
+    },
+    {
+      "id": "8",
+      "text": "Thriller"
+    },
+    {
+      "id": "9",
+      "text": "Adventure"
+    },
+    {
+      "id": "10",
+      "text": "Animation"
+    },
+    {
+      "id": "11",
+      "text": "Documentary"
+    },
+    {
+      "id": "12",
+      "text": "Biography"
+    },
+    {
+      "id": "13",
+      "text": "Mystery"
+    },
+    {
+      "id": "14",
+      "text": "Western"
+    },
+    {
+      "id": "15",
+      "text": "Musical"
+    },
+    {
+      "id": "16",
+      "text": "War"
+    },
+    {
+      "id": "17",
+      "text": "History"
+    },
+    {
+      "id": "18",
+      "text": "Crime"
+    }
+  ],
+  "rating": [
+    {
+      "id": "1",
+      "text": "★☆☆☆☆"
+    },
+    {
+      "id": "2",
+      "text": "★★☆☆☆"
+    },
+    {
+      "id": "3",
+      "text": "★★★☆☆"
+    },
+    {
+      "id": "4",
+      "text": "★★★★☆"
+    },
+    {
+      "id": "5",
+      "text": "★★★★★"
+    }
+  ]
+}

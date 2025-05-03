@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <body>
+      <!-- Main title of the application -->
+      <div class="container mt-3 d-flex justify-content-center">
+          <h1 class="text-primary">Movie Watchlist</h1>
+      </div>
+  
+      <!-- Buttons for fetching movies and adding a new movie -->
+      <div class="container mt-3 d-flex justify-content-center">
+          <button type="button" id="fetch-movies" class="btn btn-primary m-3">Fetch Movies</button>
+          <button type="button" id="add-movie" class="btn btn-primary m-3">Add A Movie</button>
+      </div>
+  
+      <!-- Table for displaying the watchlist -->
+      <div class="d-flex justify-content-center">
+          <table id="toWatch" class="table table-dark table-striped table-hover mx-3">
+              <thead>
+                  <tr>
+                      <!-- Column headers for the table -->
+                      <th class="col-4">Movie Name</th>
+                      <th class="col-4">Genre</th>
+                      <th class="col-3">Rating</th>
+                      <th class="col-1">Actions</th>
+                  </tr>
+              </thead>
+              <tbody id="watchList">
+                  <!-- Rows for movies will be dynamically added here --> 
+              </tbody>
+          </table>
+      </div>
+  
+      <!-- Modal for adding or editing a movie -->
+      <div class="modal fade" id="addMovieModal" tabindex="-1" aria-labelledby="addMovieModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <!-- Modal header -->
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="addMovieModalLabel">Movie Information</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!-- Modal body containing the form -->
+                  <div class="modal-body">
+                      <form id="addMovieForm">
+                          <!-- Input field for the movie title -->
+                          <div class="mb-3">
+                              <label for="movieTitle" class="form-label">Movie Title</label>
+                              <input type="text" class="form-control" id="movieTitle" placeholder="Enter movie title" required>
+                          </div>
+                          <!-- Dropdown for selecting the genre -->
+                          <div class="mb-3">
+                              <label for="movieGenre" class="form-label">Genre</label>
+                              <select class="form-select" id="movieGenre" required>
+                                  <option value="" disabled selected>Select a genre</option>
+                                  <option value="1">Horror</option>
+                                  <option value="2">Action</option>
+                                  <option value="3">Drama</option>
+                                  <option value="4">Comedy</option>
+                                  <option value="5">Romance</option>
+                                  <option value="6">Sci-Fi</option>
+                                  <option value="7">Fantasy</option>
+                                  <option value="8">Thriller</option>
+                                  <option value="9">Adventure</option>
+                                  <option value="10">Animation</option>
+                                  <option value="11">Documentary</option>
+                                  <option value="12">Biography</option>
+                              </select>
+                          </div>
+                          <!-- Dropdown for selecting the rating -->
+                          <div class="mb-3">
+                              <label for="movieRating" class="form-label">Rating</label>
+                              <select class="form-select" id="movieRating">
+                                  <option value="" disabled selected>Select a rating</option>
+                                  <option value="1">★☆☆☆☆</option>
+                                  <option value="2">★★☆☆☆</option>
+                                  <option value="3">★★★☆☆</option>
+                                  <option value="4">★★★★☆</option>
+                                  <option value="5">★★★★★</option>
+                              </select>
+                          </div>
+                      </form>
+                  </div>
+                  <!-- Modal footer with action buttons -->
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary" id="saveMovie">Save Movie</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
